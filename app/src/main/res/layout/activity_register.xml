@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rlRegister"
+            android:background="@color/colorPrimary">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/text_boundary_background"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="12dp"
+                android:hint="@string/enter_name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:drawableStart="@drawable/ic_action_person"
+                android:drawablePadding="3dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etName"
+                android:background="@drawable/text_boundary_background"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dip"
+                android:layout_marginRight="12dp"
+                android:drawableLeft="@drawable/ic_action_email"
+                android:drawablePadding="3dp"
+                android:maxLines="1"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_boundary_background"
+                android:layout_below="@+id/etEmail"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:maxLength="10"
+                android:drawableLeft="@drawable/ic_action_phone"
+                android:drawablePadding="3dp"
+                android:maxLines="1"
+                android:hint="@string/mobile_number"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_boundary_background"
+                android:layout_below="@+id/etPhoneNumber"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:gravity="top"
+                android:drawableLeft="@drawable/ic_action_address"
+                android:drawablePadding="3dp"
+                android:hint="@string/address"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:background="@drawable/text_boundary_background"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etAddress"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:hint="@string/choose_password"
+                android:inputType="numberPassword"
+                android:padding="10dp"
+                android:maxLength="6"
+                android:drawableLeft="@drawable/ic_action_password"
+                android:drawablePadding="3dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_boundary_background"
+                android:layout_below="@+id/etPassword"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:hint="@string/confirm_password"
+                android:inputType="numberPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLength="6"
+                android:drawableLeft="@drawable/ic_action_password"
+                android:drawablePadding="3dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etConfirmPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/registration"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</ScrollView>

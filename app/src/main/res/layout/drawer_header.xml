@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imgDrawerImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile_icon"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/txtDrawerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="15dp"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/txtDrawerSecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dip"
+        android:textAllCaps="false"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+</LinearLayout>
